@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(186, 249, 250);
+    width: 100%;
+    height: 100%;
+
+
+
+}
+
+
+
+h1{
+    text-align: center;
+    color: rgb(5, 0, 10);
+    font-size: 49px;
+
+}
+
+.container{
+    position: absolute;
+    top: 15%;
+    left: 22%;
+    background-color: rgb(114, 114, 235);
+    width: 55%;
+    height: 73%;
+
+
+}
+button{
+    width: 70px;
+    height: 30px;
+    background-color: rgb(224, 207, 58);
+    margin:6px 2px;
+    border-radius: 50px;
+
+
+}
+button a{
+    color: brown;
+    padding: 2px;
+    font-weight: bold;
+    text-decoration:none
+
+}
+
+input{
+    width: 93%;
+    height: 40px;
+}
+label{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(2, 0, 18);
+
+}
+.inner{
+    padding: 30px 20px;
+    margin-left:40px;
+
+}
+.msg{
+ text-decoration: none;
+ color: blueviolet;
+ bottom: 30px;
+}
+.headng h1{
+    padding: 30px;
+}
+/*Responsive*/
+
+
+@media screen and (max-width: 480px) {
+        body {
+          background-color: lightgreen;
+        }
+        .inner {
+            padding: 15px 10px;
+            margin-left: 15px;
+        }
+        label{
+            font-size: 3vh}
+        input {
+            width: 93%;
+            height: 30px;
+        }
+        .headng h1{
+            padding: 25px;
+            font-size: 3vh
+        }
+
+    }

@@ -1,0 +1,28 @@
+{% extends 'reg_app/index.html' %}
+{% block content %}
+{% load static %}
+
+    <form action="/sign_up" method="post">
+        {%csrf_token%}
+        <div class="container">
+        <div class="inner">
+        <label for="username">username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Create a username" required><br>
+        <label for="">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="First name" required><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Last name"><br>
+
+        <label for="">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Create a username" required><br>
+        <label for="">Password:</label><br>
+        <input type="text" id="pass1" name="pass1" placeholder="Create a username" required><br>
+        <label for="">Confirm Password:</label><br>
+        <input type="text" id="pass2" name="pass2" placeholder="Create a username" required><br>
+        <button type="submit">SignUp</button>
+        </div>
+        </div>
+    </div>
+      </form>
+
+{% endblock %}
